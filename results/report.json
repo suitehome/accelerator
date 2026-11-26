@@ -1,0 +1,116 @@
+{
+  "sensor": "vibration",
+  "task": "binary",
+  "classes": [
+    "healthy",
+    "damaged"
+  ],
+  "conditions": [
+    "N15_M07_F10"
+  ],
+  "feature_names": [
+    "1BPFO",
+    "2BPFO",
+    "3BPFO",
+    "4BPFO",
+    "5BPFO",
+    "6BPFO",
+    "1BPFI",
+    "2BPFI",
+    "3BPFI",
+    "4BPFI",
+    "5BPFI",
+    "6BPFI",
+    "1BPFI-fr",
+    "1BPFI+fr",
+    "2BPFI-fr",
+    "2BPFI+fr",
+    "3BPFI-fr",
+    "3BPFI+fr",
+    "1fr",
+    "2fr",
+    "3fr",
+    "4fr",
+    "1BSF",
+    "2BSF",
+    "3BSF",
+    "FTF",
+    "2FTF",
+    "rms_dB",
+    "kurtosis",
+    "crest",
+    "skewness",
+    "env_kurtosis"
+  ],
+  "train_bearings": [
+    "K001",
+    "K002",
+    "K003",
+    "K004",
+    "KA04",
+    "KA15",
+    "KA22",
+    "KI04",
+    "KI14",
+    "KI16",
+    "KI17"
+  ],
+  "test_bearings": [
+    "K005",
+    "K006",
+    "KA16",
+    "KA30",
+    "KI18",
+    "KI21"
+  ],
+  "lobo_train": {
+    "mean_acc": 0.8607933152119198,
+    "per_bearing": {
+      "K001": 0.8,
+      "K002": 1.0,
+      "K003": 1.0,
+      "K004": 0.0016666666666666668,
+      "KA04": 1.0,
+      "KA15": 0.8,
+      "KA22": 0.8820598006644518,
+      "KI04": 1.0,
+      "KI14": 1.0,
+      "KI16": 1.0,
+      "KI17": 0.985
+    }
+  },
+  "float": {
+    "train_acc": 1.0,
+    "test_acc": 0.8344904193279644,
+    "test_file_vote_acc": 0.8333333333333334
+  },
+  "bit_sweep_test_acc": {
+    "8": 0.8339350180505415,
+    "6": 0.8353235212440988,
+    "4": 0.8078311580116634
+  },
+  "int8": {
+    "test_acc": 0.8339350180505415,
+    "test_file_vote_acc": 0.8333333333333334,
+    "loss_vs_float_pp": 0.05554012774229289,
+    "confusion_test": [
+      [
+        605,
+        596
+      ],
+      [
+        2,
+        2398
+      ]
+    ],
+    "per_bearing_acc": {
+      "K005": 0.006666666666666667,
+      "K006": 1.0,
+      "KA16": 1.0,
+      "KA30": 1.0,
+      "KI18": 0.9966666666666667,
+      "KI21": 1.0
+    }
+  },
+  "leaky_random_split_acc": 0.970617042115573
+}
